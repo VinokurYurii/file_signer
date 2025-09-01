@@ -1,4 +1,4 @@
-package filesigner
+package main
 
 import (
 	"file_signer/cmd"

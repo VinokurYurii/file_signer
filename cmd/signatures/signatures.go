@@ -2,12 +2,12 @@ package signatures
 
 import "github.com/spf13/cobra"
 
-var keysCmd = &cobra.Command{
-	Use:   "keys",
-	Short: "Manage key pairs.",
-	Long:  "Use subcommands to create publix/private key pairs in PEM files.",
+var signaturesCmd = &cobra.Command{
+	Use:   "signatures",
+	Short: "Create and verify signatures.",
+	Long:  "Use subcommands to create signature (.sig) with private key and verify signature.",
 }
 
 func Init(rootCmd *cobra.Command) {
-	rootCmd.AddCommand(keysCmd)
+	rootCmd.AddCommand(signaturesCmd)
 }
